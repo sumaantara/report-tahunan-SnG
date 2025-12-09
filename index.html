@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Annual Report 2025 — Department SnG (Strategy & Growth)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#071026; --bg2:#0b1930; --accent:#00d4ff; --glass:rgba(255,255,255,0.04);
+      --card:rgba(255,255,255,0.03); --muted:rgba(255,255,255,0.6);
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#e6f7ff}
+    /* IT-themed background grid + subtle circuit */
+    body::before{content:"";position:fixed;inset:0;z-index:0;background-image:radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0));background-size:40px 40px, 100% 100%;opacity:0.6;mix-blend-mode:overlay;}
+    .container{position:relative;z-index:2;max-width:1100px;margin:36px auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5b8bff);display:grid;place-items:center;box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+    .logo svg{width:38px;height:38px}
+    h1{font-size:20px;margin:0;font-weight:700}
+    p.lead{margin:0;color:var(--muted)}
+
+    nav{display:flex;gap:10px;align-items:center}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);font-weight:600;cursor:pointer}
+
+    main{margin-top:22px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:20px;box-shadow:0 8px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    .summary h2{margin:0 0 8px 0}
+    .metrics{display:flex;gap:12px;margin-top:12px}
+    .metric{flex:1;background:var(--card);padding:12px;border-radius:10px;text-align:center}
+    .metric strong{display:block;font-size:18px}
+
+    section{margin-top:18px}
+    h3{margin:0 0 8px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .mono{font-family:monospace;background:rgba(0,0,0,0.12);padding:10px;border-radius:8px;color:var(--accent);overflow:auto}
+
+    footer{margin-top:26px;padding:14px;border-radius:10px;text-align:center;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+
+    /* callout */
+    .pill{display:inline-block;background:linear-gradient(90deg,rgba(0,212,255,0.08),rgba(91,139,255,0.06));padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:700;font-size:13px}
+
+    /* timeline */
+    .timeline{display:flex;flex-direction:column;gap:10px}
+    .tl-item{display:flex;gap:12px;align-items:flex-start}
+    .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 2px 8px rgba(0,212,255,0.12)}
+
+    /* print friendly */
+    @media print{body::before{display:none}.container{max-width:100%}} 
+  
+/* accordion styles */
+.accordion{display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none}
+.accordion:after{content:'▸';transform:rotate(0);transition:transform .25s ease;opacity:0.9;margin-left:12px}
+.accordion.open:after{transform:rotate(90deg)}
+.collapse-content{max-height:0;overflow:hidden;transition:max-height .35s ease,padding-top .25s ease;padding-top:0}
+.collapse-content.open{padding-top:12px}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <div>
+          <h1>Annual Report 2025 — Strategy & Growth (SnG)</h1>
+          <p class="lead">A digital-first review of initiatives, risks, and roadmap — highlighting modernization, AI adoption, and infrastructure growth.</p>
+        </div>
+      </div>
+      <nav>
+        </button>
+      </nav><!-- removed print/download -->
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card summary">
+          <span class="pill">Department SnG — Strategy & Growth</span>
+          <h2>Ringkasan 2025</h2>
+          <p>2025 menjadi tahun transformatif: digitalisasi proses, peningkatan infrastruktur, dan penguatan kapabilitas internal. Fokus utama: modernisasi kebijakan, pemanfaatan AI, dan persiapan subdivisi IT.</p>
+
+          <div class="metrics">
+            <div class="metric"><strong>5+</strong><span class="muted">Proyek Besar</span></div>
+            <div class="metric"><strong>2x</strong><span class="muted">Peningkatan Efisiensi</span></div>
+            
+          </div>
+
+          <section>
+            <h3 class="accordion"><span style="margin-right:8px;vertical-align:middle;">📌</span>Highlights</h3>
+            <div class="timeline">
+              <div class="tl-item"><div class="dot"></div><div><strong>ONE Cloud</strong><div class="mono">Dirilis: September 2024 — Sinkronisasi seluruh file dari local server ke cloud.</div></div></div>
+              <div class="tl-item"><div class="dot"></div><div><strong>Management Inventory System</strong><div class="mono">Rilis: Sept 2024 — Disederhanakan di 2025 untuk UX lebih baik.</div></div></div>
+              <div class="tl-item"><div class="dot"></div><div><strong>Chatbot</strong><div class="mono">Uji coba selesai — implementasi akhir target Desember 2025.</div></div></div>
+            </div>
+          </section>
+        </div>
+
+        
+      </div>
+
+      
+
+      <section class="card">
+        <h3 class="accordion"><span style="margin-right:8px;vertical-align:middle;">📌</span>1. Modernisasi Company Rules, Policy & Pemanfaatan Teknologi & AI</h3>
+        <p>Modernisasi kebijakan perusahaan dilakukan untuk menyesuaikan pola kerja generasi saat ini, khususnya Gen Z, serta meningkatkan produktivitas melalui pemanfaatan teknologi.</p>
+        <h4>Fleksibilitas Kerja</h4>
+        <ul>
+          <li>Peningkatan permintaan WFH dengan hasil monitoring tetap on-track.</li>
+          <li>Daily check-in & end-of-day report untuk tim WFH.</li>
+          <li>Standar komunikasi dan penggunaan task board diperketat.</li>
+        </ul>
+        <h4>Dampak Positif</h4>
+        <ul>
+          <li>Produktivitas meningkat.</li>
+          <li>Loyalitas karyawan bertambah.</li>
+          <li>Retensi staf meningkat di kalangan Gen Z.</li>
+        </ul>
+        <h4>Pemanfaatan Teknologi & AI</h4>
+        <p>AI digunakan untuk mempercepat proses desain, riset, copywriting, debugging, dan pengembangan aset grafis.</p>
+        <ul>
+          <li>AI meningkatkan kecepatan dan konsistensi hasil kerja.</li>
+          <li>Uji coba chatbot internal — implementasi final ditargetkan dalam waktu dekat.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3 class="accordion"><span style="margin-right:8px;vertical-align:middle;">📌</span>2. Manajemen Risiko SDM</h3>
+        <p>Langkah mitigasi untuk menjaga kesinambungan operasional saat terjadi turnover atau absensi mendadak:</p>
+        <ul>
+          <li>Identifikasi posisi kritikal dengan minimal 1 backup kandidat.</li>
+          <li>Checklist kompetensi untuk kandidat backup.</li>
+          <li>Program shadowing untuk transfer pengetahuan.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3 class="accordion"><span style="margin-right:8px;vertical-align:middle;">📌</span>3. Rencana Pengembangan Bisnis</h3>
+        <p>Visi: mengintegrasikan proses perusahaan melalui teknologi. Fokus pada sistem & infrastruktur, pembentukan subdivisi IT Software Development, dan proyek strategis.</p>
+
+        <div class="grid" style="margin-top:12px">
+          <div>
+            <h4><span style="margin-right:6px;vertical-align:middle;">•</span>Penguatan Sistem & Infrastruktur</h4>
+            <p>Pengembangan sistem web & cloud, infrastruktur IT, dan automasi alur kerja operasional.</p>
+          </div>
+          <div>
+            <h4><span style="margin-right:6px;vertical-align:middle;">•</span>Subdivisi IT — Software Development</h4>
+            <p>Pengembangan & pemeliharaan software: Aplikasi Visa Submissions, CRM-HRM, dan sistem internal lainnya.</p>
+          </div>
+        </div>
+
+        <h4 style="margin-top:12px">Proyek Strategis</h4>
+        <ul>
+          <li>Peluncuran Aplikasi Ticketing (2026) untuk manajemen permintaan internal.</li>
+          <li>Peremajaan aset IT untuk mendukung produktivitas jangka panjang.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3 class="accordion"><span style="margin-right:8px;vertical-align:middle;">📌</span>4. Evaluasi Program Kerja 2025</h3>
+        <p>Ringkasan program yang berhasil dan pembelajaran:</p>
+        <div class="grid" style="margin-top:12px">
+          <div>
+            <h4><span style="margin-right:6px;vertical-align:middle;">•</span>Program Berhasil</h4>
+            <ul>
+              <li>Website & redesign halaman kursus — lebih responsif dan meningkatkan konversi.</li>
+              <li>Upgrade Form N1 (Fluent Form) — stabilitas dan kecepatan input.</li>
+              <li>Split server di Cloudways — mengatasi overload CPU/RAM.</li>
+              <li>Implementasi scoring pada semua form — membantu penentuan kualitas leads.</li>
+              <li>Pembuatan website baru: Ratu Village & Gilitiki.</li>
+            </ul>
+          </div>
+          <div>
+            <h4><span style="margin-right:6px;vertical-align:middle;">•</span>Sistem & Infrastruktur</h4>
+            <ul>
+              <li>Management Inventory System — disederhanakan 2025.</li>
+              <li>ONE Cloud — diluncurkan Sept 2024, sinkronisasi file lokal ke cloud.</li>
+              <li>Downgrade Google Suite untuk efisiensi biaya; upgrade domain onederland.co.nz untuk mengatasi defer & spam.</li>
+              <li>Pengadaan PC Design — meningkatkan kecepatan produksi desain.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="margin-top:12px">Penutup: Tahun 2025 menandai lompatan penting menuju digitalisasi dan kesiapan operasi SnG memasuki 2026 dengan fokus inovasi dan ekspansi teknologi.</p>
+      </section>
+
+      
+
+    </main>
+
+    <footer>
+      © 2025 Department SnG — Strategy & Growth • Prepared by SnG Team
+    </footer>
+  </div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('h3.accordion').forEach(function(h){
+    var parent = h.parentNode;
+    var siblings = [];
+    var next = h.nextElementSibling;
+    while(next){
+      if(next.tagName && next.tagName.toLowerCase()==='h3') break;
+      siblings.push(next);
+      next = next.nextElementSibling;
+    }
+    if(siblings.length===0) return;
+    var wrapper = document.createElement('div');
+    wrapper.className = 'collapse-content';
+    siblings.forEach(function(n){ wrapper.appendChild(n); });
+    parent.insertBefore(wrapper, h.nextElementSibling);
+    // initial open for summary card
+    if(parent.classList && parent.classList.contains('summary')){ wrapper.classList.add('open'); h.classList.add('open'); wrapper.style.maxHeight = wrapper.scrollHeight + 'px'; }
+    h.addEventListener('click', function(){
+      var isOpen = wrapper.classList.toggle('open');
+      h.classList.toggle('open', isOpen);
+      if(isOpen){ wrapper.style.maxHeight = wrapper.scrollHeight + 'px'; } else { wrapper.style.maxHeight = '0'; }
+    });
+  });
+});
+</script>
+</body>
+</html>
